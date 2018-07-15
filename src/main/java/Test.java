@@ -15,7 +15,7 @@ import java.util.logging.Level;
 public class Test {
 
     private static final HashMap<String, PhoneCall> CLIENT_CALLS = Maps.newHashMap();
-    private static final int TOTAL_CALLS = 200;
+    private static final int TOTAL_CALLS = 1000;
     private final int clients;
     private final int taxiDrivers;
     private final MessageCreationType messageCreationType;
