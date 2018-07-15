@@ -105,7 +105,9 @@ public final class LifeITUtils {
     public static void clearFolders() throws IOException {
         File tempDir = FileUtils.getTempDirectory();
         File taxiDriverFolder = new File(tempDir + File.separator + "taxi_drivers");
-        FileUtils.cleanDirectory(taxiDriverFolder);
+        if (taxiDriverFolder.exists() && taxiDriverFolder.isDirectory()) {
+            FileUtils.cleanDirectory(taxiDriverFolder);
+        }
     }
 
     /**
